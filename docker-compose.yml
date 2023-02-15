@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  proxysql:
+    network_mode: "host"
+    volumes:
+      - './proxysql.cnf:/etc/proxysql.cnf'
+    image: proxysql/proxysql
